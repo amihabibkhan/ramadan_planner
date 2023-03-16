@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProttoyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/prottyoy_title_shape"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="আমার"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="প্রত্যয়"
+                android:textSize="40dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:layout_height="wrap_content"
+                android:text="@string/prottoy_1"/>
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:layout_height="wrap_content"
+                android:text="@string/prottoy_2"/>
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:layout_height="wrap_content"
+                android:text="@string/prottoy_3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/ameen"
+                    android:layout_width="wrap_content"
+                    android:text="আমিন"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

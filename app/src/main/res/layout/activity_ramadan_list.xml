@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft_white"
+    tools:context=".RamadanListActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="15dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="০১"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ১ম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_2"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="০২"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ২য় দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_3"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="০৩"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ৩য় দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_4"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="০৪"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ৪র্থ দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_5"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="০৫"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ৫ম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_6"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="০৬"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ৬ষ্ঠ দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_7"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="০৭"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ৭ম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_8"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="০৮"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ৮ম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_9"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="০৯"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ৯ম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_10"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="১০"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ১০ম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_11"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="১১"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ১১তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_12"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="১২"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ১২তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_13"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="১৩"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ১৩তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_14"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="১৪"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ১৪তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_15"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="১৫"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ১৫তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_16"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="১৬"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ১৬তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_17"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="১৭"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ১৭তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_18"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="১৮"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ১৮তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_19"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="১৯"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ১৯তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_20"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="২০"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ২০তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_21"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="২১"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ২১তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_22"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="২২"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ২২তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_23"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="২৩"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ২৩তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_24"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="২৪"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ২৪তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_25"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="২৫"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ২৫তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_26"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="২৬"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ২৬তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_27"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="২৭"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ২৭তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_28"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="২৮"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ২৮তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_29"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="২৯"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ২৯তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ramadan_30"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="৩০"
+                    android:textAlignment="center"
+                    style="@style/ramadanList"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:text="রমাদান: ৩০তম দিন"
+                    style="@style/ramadanList_2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

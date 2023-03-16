@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DuaActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/dua"
+                android:textColor="@color/sky"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_1_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                style="@style/dua"
+                android:fontFamily="@font/amiri_arabic_font"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_1"/>
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:textColor="@color/sky"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_1_bangla"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_1_meaning"/>
+
+            <!-- second dua -->
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/dua"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/sky"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_2_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                style="@style/dua"
+                android:fontFamily="@font/amiri_arabic_font"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_2"/>
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:textColor="@color/sky"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_2_bangla"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_2_meaning"/>
+
+            <!-- third dua -->
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/dua"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/sky"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_3_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                style="@style/dua"
+                android:fontFamily="@font/amiri_arabic_font"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_3"/>
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:textColor="@color/sky"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_3_bangla"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_3_meaning"/>
+
+            <!-- forth dua -->
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/dua"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/sky"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_4_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                style="@style/dua"
+                android:fontFamily="@font/amiri_arabic_font"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_4"/>
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:textColor="@color/sky"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_4_bangla"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_4_meaning"/>
+
+            <!-- fifth dua -->
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/dua"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/sky"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_5_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                style="@style/dua"
+                android:fontFamily="@font/amiri_arabic_font"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_5"/>
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:textColor="@color/sky"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_5_bangla"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_5_meaning"/>
+
+            <!-- fifth dua -->
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/dua"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/sky"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_6_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                style="@style/dua"
+                android:fontFamily="@font/amiri_arabic_font"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_6"/>
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:textColor="@color/sky"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_6_bangla"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_6_meaning"/>
+
+            <!-- fifth dua -->
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/dua"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/sky"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_7_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                style="@style/dua"
+                android:fontFamily="@font/amiri_arabic_font"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_7"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/paragraph"
+                android:layout_height="wrap_content"
+                android:text="@string/duah_7_meaning"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
