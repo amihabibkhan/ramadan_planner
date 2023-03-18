@@ -146,7 +146,7 @@
                         android:layout_width="wrap_content"
                         style="@style/checkList"
                         android:id="@+id/check_list_8"
-                        android:text="আল্লাহকে স্মরণ রেছে প্রতিটি কাজ করেছি কি?"
+                        android:text="আল্লাহকে স্মরণ রেখে প্রতিটি কাজ করেছি কি?"
                         android:layout_height="wrap_content"/>
                     <CheckBox
                         android:layout_width="wrap_content"

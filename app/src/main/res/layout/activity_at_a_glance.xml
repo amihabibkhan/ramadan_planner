@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AtAGlanceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <!-- card view start  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:padding="7dp"
+                android:orientation="vertical"
+                android:background="@drawable/ramadan_report_card"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="রমাদান যেমন কাটালাম"
+                        style="@style/heading_1"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:paddingTop="5dp"
+                        android:text="এ বছরের রমাদান মাস আপনি যেমন কাটিয়েছেন \n তার এক নজরে রিপোর্ট।"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/home_menu"
+                    android:layout_height="wrap_content">
+
+                    <!-- single line start -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="নতুন কিছু শিখেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/check_list_1_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <!-- single line end-->
+
+                    <!-- single line start -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="সবার সাথে হাসিমুখে কথা বলেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/check_list_2_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <!-- single line end-->
+
+                    <!-- single line start -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ইসলামের পথে কাউকে আহবান করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/check_list_3_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <!-- single line end-->
+
+                    <!-- single line start -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="পিতা-মাতার প্রতি সদাচরণ হয়েছে:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/check_list_4_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <!-- single line end-->
+
+                    <!-- single line start -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দান করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/check_list_5_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <!-- single line end-->
+
+                    <!-- single line start -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="কাউকে সাহায্য করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/check_list_6_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <!-- single line end-->
+
+                    <!-- single line start -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="ইফতার করাতে পেরেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/check_list_7_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="জনকে"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <!-- single line end-->
+
+                    <!-- single line start -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="আল্লাহকে স্মরণ রেখে প্রতিটি কাজ করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/check_list_8_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <!-- single line end-->
+
+                    <!-- single line start -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="ভুলের জন্য ক্ষমা প্রার্থনা করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/check_list_9_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <!-- single line end-->
+
+                </LinearLayout>
+            </LinearLayout>
+            <!-- card view end -->
+
+            <!-- card start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="7dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/ramadan_report_card"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:src="@drawable/quran"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="22dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="কুরআন পাঠের মুল্যায়ন"
+                        style="@style/heading_1"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <!-- card  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/home_menu"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="তেলাওয়াত করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/tilawat_ayat_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="টি আয়াত"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="মুখস্থ করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/memorize_ayat_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="টি আয়াত"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="তেলাওয়াত করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/tilawat_sura_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="টি সুরা"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="আজ মুখস্থ করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/memorize_sura_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="টি সুরা"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- card end -->
+
+            <!-- card start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="7dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/ramadan_report_card"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:src="@drawable/nabawi_mosque"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="22dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="নামাজের মূল্যায়ন"
+                        style="@style/heading_1"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <!-- card  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/home_menu"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="ফজরের ফরজ আদায় করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/fazr_f_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="ফজরের সুন্নত আদায় করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/fazr_s_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="যোহরের ফরজ আদায় করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/zohor_f_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="যোহরের সুন্নত আদায় করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/zohor_s_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="আসরের ফরজ আদায় করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/asor_f_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="আসরের সুন্নত আদায় করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/asor_s_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="মাগরিবের ফরজ আদায় করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/magrib_f_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="মাগরিবের সুন্নত আদায় করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/magrib_s_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="এশার ফরজ আদায় করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/isha_f_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="এশার সুন্নত আদায় করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/isha_s_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="তারাবীহ আদায় করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/tarabih_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@drawable/star"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="তাহাজ্জুদ আদায় করেছি:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="12"
+                            android:id="@+id/tahazzud_output"
+                            android:paddingHorizontal="5dp"
+                            android:fontFamily="@font/sutonnymj"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="দিন"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- card end -->
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

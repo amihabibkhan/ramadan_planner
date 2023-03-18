@@ -12,9 +12,17 @@
         android:theme="@style/Theme.RamadanPlanner"
         tools:targetApi="31">
         <activity
-            android:name=".RamadanReportActivity"
-            android:parentActivityName=".RamadanListActivity"
+            android:name=".AboutActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".AtAGlanceActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RamadanReportActivity"
+            android:exported="false"
+            android:parentActivityName=".RamadanListActivity" />
         <activity
             android:name=".RamadanListActivity"
             android:exported="false"

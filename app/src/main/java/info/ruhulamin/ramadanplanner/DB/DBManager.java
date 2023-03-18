@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.lang.reflect.Array;
 
+import info.ruhulamin.ramadanplanner.Model.AknojoreModel;
 import info.ruhulamin.ramadanplanner.Model.ReportModel;
 
 public class DBManager extends SQLiteOpenHelper {
@@ -194,6 +195,98 @@ public class DBManager extends SQLiteOpenHelper {
             return Integer.parseInt(item);
         }
         return 0;
+    }
+
+    public AknojoreModel getEknojore(){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT * FROM reports", null);
+
+        AknojoreModel aknojoreModel = new AknojoreModel();
+
+        int check_list_1 = 0;
+        int check_list_2 = 0;
+        int check_list_3 = 0;
+        int check_list_4 = 0;
+        int check_list_5 = 0;
+        int check_list_6 = 0;
+        int check_list_7 = 0;
+        int check_list_8 = 0;
+        int check_list_9 = 0;
+        int fazar_f = 0;
+        int fazar_s = 0;
+        int zohor_f = 0;
+        int zohor_s = 0;
+        int asor_f = 0;
+        int asor_s = 0;
+        int magrib_f = 0;
+        int magrib_s = 0;
+        int isha_f = 0;
+        int isha_s = 0;
+        int tarabih = 0;
+        int tahazzud = 0;
+        int tilawat_ayah = 0;
+        int tilawat_sura = 0;
+        int memorize_ayah = 0;
+        int memorize_sura = 0;
+
+        if(cursor!=null && cursor.getCount()>0) {
+            while(cursor.moveToNext()){
+                check_list_1 += cursor.getInt(2);
+                check_list_2 += cursor.getInt(3);
+                check_list_3 += cursor.getInt(4);
+                check_list_4 += cursor.getInt(5);
+                check_list_5 += cursor.getInt(6);
+                check_list_6 += cursor.getInt(7);
+                check_list_7 += cursor.getInt(8);
+                check_list_8 += cursor.getInt(9);
+                check_list_9 += cursor.getInt(10);
+                fazar_f += cursor.getInt(11);
+                fazar_s += cursor.getInt(12);
+                zohor_f += cursor.getInt(13);
+                zohor_s += cursor.getInt(14);
+                asor_f += cursor.getInt(15);
+                asor_s += cursor.getInt(16);
+                magrib_f += cursor.getInt(17);
+                magrib_s += cursor.getInt(18);
+                isha_f += cursor.getInt(19);
+                isha_s += cursor.getInt(20);
+                tarabih += cursor.getInt(21);
+                tahazzud += cursor.getInt(22);
+                tilawat_ayah += cursor.getInt(23);
+                tilawat_sura += cursor.getInt(24);
+                memorize_ayah += cursor.getInt(25);
+                memorize_sura += cursor.getInt(26);
+            }
+        }
+
+        aknojoreModel.setCheck_list_1(check_list_1);
+        aknojoreModel.setCheck_list_2(check_list_2);
+        aknojoreModel.setCheck_list_3(check_list_3);
+        aknojoreModel.setCheck_list_4(check_list_4);
+        aknojoreModel.setCheck_list_5(check_list_5);
+        aknojoreModel.setCheck_list_6(check_list_6);
+        aknojoreModel.setCheck_list_7(check_list_7);
+        aknojoreModel.setCheck_list_8(check_list_8);
+        aknojoreModel.setCheck_list_9(check_list_9);
+        aknojoreModel.setFazar_f(fazar_f);
+        aknojoreModel.setFazar_s(fazar_s);
+        aknojoreModel.setZohor_f(zohor_f);
+        aknojoreModel.setZohor_s(zohor_s);
+        aknojoreModel.setAsor_f(asor_f);
+        aknojoreModel.setAsor_s(asor_s);
+        aknojoreModel.setMagrib_f(magrib_f);
+        aknojoreModel.setMagrib_s(magrib_s);
+        aknojoreModel.setIsha_f(isha_f);
+        aknojoreModel.setIsha_s(isha_s);
+        aknojoreModel.setTarabih(tarabih);
+        aknojoreModel.setTahazzud(tahazzud);
+        aknojoreModel.setTilawat_ayah(tilawat_ayah);
+        aknojoreModel.setTilawat_sura(tilawat_sura);
+        aknojoreModel.setMemorize_ayah(memorize_ayah);
+        aknojoreModel.setMemorize_sura(memorize_sura);
+
+        return aknojoreModel;
     }
 
 }

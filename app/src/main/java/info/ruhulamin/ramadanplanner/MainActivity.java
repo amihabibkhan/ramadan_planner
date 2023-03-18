@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         Intent prottoyIntent = new Intent(MainActivity.this, ProttoyActivity.class);
         Intent planIntent = new Intent(MainActivity.this, MonthlyPlanActivity.class);
         Intent ramadanListIntent = new Intent(MainActivity.this, RamadanListActivity.class);
+        Intent atAGlanceIntent = new Intent(MainActivity.this, AtAGlanceActivity.class);
+        Intent aboutAppIntent = new Intent(MainActivity.this, AboutActivity.class);
 
         ramadanImportance.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,13 +81,13 @@ public class MainActivity extends AppCompatActivity {
         about_app.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "কাজ চলমান রয়েছে!", Toast.LENGTH_SHORT).show();
+                startActivity(aboutAppIntent);
             }
         });
         at_a_glance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "কাজ চলমান রয়েছে!", Toast.LENGTH_SHORT).show();
+                startActivity(atAGlanceIntent);
             }
         });
 
