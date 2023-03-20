@@ -71,7 +71,7 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/check_list_1_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -108,7 +108,7 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/check_list_2_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -146,7 +146,7 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/check_list_3_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -183,7 +183,7 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/check_list_4_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -220,7 +220,7 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/check_list_5_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -257,7 +257,7 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/check_list_6_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -294,7 +294,7 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/check_list_7_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -331,7 +331,7 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/check_list_8_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -368,7 +368,7 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/check_list_9_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -439,7 +439,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/tilawat_ayat_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -472,7 +472,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/memorize_ayat_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -505,7 +505,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/tilawat_sura_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -537,7 +537,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/memorize_sura_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -606,7 +606,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/fazr_f_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -639,7 +639,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/fazr_s_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -673,7 +673,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/zohor_f_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -706,7 +706,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/zohor_s_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -741,7 +741,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/asor_f_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -774,7 +774,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/asor_s_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -808,7 +808,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/magrib_f_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -841,7 +841,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/magrib_s_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -875,7 +875,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/isha_f_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -908,7 +908,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/isha_s_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -942,7 +942,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/tarabih_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"
@@ -975,7 +975,7 @@
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:text="12"
+                            android:text="0"
                             android:id="@+id/tahazzud_output"
                             android:paddingHorizontal="5dp"
                             android:fontFamily="@font/sutonnymj"

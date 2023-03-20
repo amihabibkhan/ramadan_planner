@@ -25,18 +25,14 @@ public class AtAGlanceActivity extends AppCompatActivity {
 
         setTitle("একনজরে এবারের রমাদান");
 
+        initIDS();
+
         dbManager = new DBManager(this);
         AknojoreModel aknojore = dbManager.getEknojore();
 //        Gson gson = new Gson();
 //        String s = gson.toJson(aknojore);
 //        Log.d("my_data", s);
 
-        initIDS();
-
-        setData();
-    }
-
-    public void setData(){
         check_list_1_output.setText("" + aknojore.getCheck_list_1());
         check_list_2_output.setText("" + aknojore.getCheck_list_2());
         check_list_3_output.setText("" + aknojore.getCheck_list_3());
@@ -62,6 +58,7 @@ public class AtAGlanceActivity extends AppCompatActivity {
         isha_s_output.setText("" + aknojore.getIsha_s());
         tarabih_output.setText("" + aknojore.getTarabih());
         tahazzud_output.setText("" + aknojore.getTahazzud());
+
     }
 
     public void initIDS(){
@@ -92,3 +89,4 @@ public class AtAGlanceActivity extends AppCompatActivity {
         tahazzud_output = (TextView) findViewById(R.id.tahazzud_output);
     }
 }
+

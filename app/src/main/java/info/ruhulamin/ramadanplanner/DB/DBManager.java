@@ -25,6 +25,7 @@ public class DBManager extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE reports (id INTEGER PRIMARY KEY AUTOINCREMENT, ramadan_id INTEGER, check_list_1 INTEGER, check_list_2 INTEGER, check_list_3 INTEGER, check_list_4 INTEGER, check_list_5 INTEGER, check_list_6 INTEGER, check_list_7 INTEGER, check_list_8 INTEGER, check_list_9 INTEGER," +
                 "tilawat_ayah INTEGER, tilawat_sura INTEGER, memorize_ayah INTEGER, memorize_sura INTEGER, fazar_f INTEGER, fazar_s INTEGER, zohor_f INTEGER, zohor_s INTEGER, asor_f INTEGER, asor_s INTEGER, magrib_f INTEGER, magrib_s INTEGER, isha_f INTEGER, isha_s INTEGER, tarabih INTEGER, tahazzud INTEGER," +
                 "self_criticism TEXT, achievement TEXT)");
+        db.execSQL("CREATE TABLE habits (id INTEGER PRIMARY KEY AUTOINCREMENT, habit TEXT, solve TEXT)");
     }
 
 
@@ -32,6 +33,7 @@ public class DBManager extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL("DROP TABLE IF EXISTS plans");
         db.execSQL("DROP TABLE IF EXISTS reports");
+        db.execSQL("DROP TABLE IF EXISTS habits");
         onCreate(db);
     }
 
@@ -42,6 +44,15 @@ public class DBManager extends SQLiteOpenHelper {
         updateValue.put("plan_value", plan_value);
 
         db.update("plans", updateValue, "plan_for = " + plan_for, null);
+    }
+    public void updateHabits(int habit_id, String habit, String solve){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues updateValue = new ContentValues();
+
+        updateValue.put("habit", habit);
+        updateValue.put("solve", solve);
+
+        db.update("habits", updateValue, "id = " + habit_id, null);
     }
 
     public void updateReport(ReportModel newData, int ramadan_id){
@@ -93,6 +104,17 @@ public class DBManager extends SQLiteOpenHelper {
             addPlanFirstTime();
         }
     }
+    public void checkHabitTable() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String Query = "Select * from habits";
+
+        Cursor cursor = db.rawQuery(Query, null);
+
+        if(cursor.getCount() <= 0){
+            db.execSQL("DELETE FROM habits");
+            addHabitFirstTime();
+        }
+    }
 
     public void checkReportTable() {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -124,7 +146,30 @@ public class DBManager extends SQLiteOpenHelper {
             db.insert("plans", null, values);
         }
     }
+    public void addHabitFirstTime(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        for (int i = 1; i <= 10; i++){
+            values.put("habit", "");
+            values.put("solve", "");
+            db.insert("habits", null, values);
+        }
+    }
 
+    public String getSingleHabitData(int id, int column_index){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM habits WHERE id = " + id, null);
+        String data = null;
+
+        if(cursor!=null && cursor.getCount()>0) {
+            cursor.moveToFirst();
+            do {
+                data = cursor.getString(column_index);
+            } while (cursor.moveToNext());
+        }
+
+        return data;
+    }
     public String getSingleData(int plan_for){
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM plans WHERE plan_for = " + plan_for, null);
@@ -139,6 +184,7 @@ public class DBManager extends SQLiteOpenHelper {
 
         return data;
     }
+
     public ReportModel getReportSingleData(int ramadan_id){
 
         SQLiteDatabase db = this.getReadableDatabase();
@@ -241,22 +287,23 @@ public class DBManager extends SQLiteOpenHelper {
                 check_list_7 += cursor.getInt(8);
                 check_list_8 += cursor.getInt(9);
                 check_list_9 += cursor.getInt(10);
-                fazar_f += cursor.getInt(11);
-                fazar_s += cursor.getInt(12);
-                zohor_f += cursor.getInt(13);
-                zohor_s += cursor.getInt(14);
-                asor_f += cursor.getInt(15);
-                asor_s += cursor.getInt(16);
-                magrib_f += cursor.getInt(17);
-                magrib_s += cursor.getInt(18);
-                isha_f += cursor.getInt(19);
-                isha_s += cursor.getInt(20);
-                tarabih += cursor.getInt(21);
-                tahazzud += cursor.getInt(22);
-                tilawat_ayah += cursor.getInt(23);
-                tilawat_sura += cursor.getInt(24);
-                memorize_ayah += cursor.getInt(25);
-                memorize_sura += cursor.getInt(26);
+                tilawat_ayah += cursor.getInt(11);
+                tilawat_sura += cursor.getInt(12);
+                memorize_ayah += cursor.getInt(13);
+                memorize_sura += cursor.getInt(14);
+                fazar_f += cursor.getInt(15);
+                fazar_s += cursor.getInt(16);
+                zohor_f += cursor.getInt(17);
+                zohor_s += cursor.getInt(18);
+                asor_f += cursor.getInt(19);
+                asor_s += cursor.getInt(20);
+                magrib_f += cursor.getInt(21);
+                magrib_s += cursor.getInt(22);
+                isha_f += cursor.getInt(23);
+                isha_s += cursor.getInt(24);
+                tarabih += cursor.getInt(25);
+                tahazzud += cursor.getInt(26);
+
             }
         }
 

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HabitActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/save_habit"
+        android:padding="15dp"
+        android:id="@+id/svHabit"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="center"
+                android:paddingHorizontal="30dp"
+                android:text="আরও উত্তম হওয়ার জন্য এই রামাদানকে কাজে লাগান"
+                android:layout_height="wrap_content"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+<!--                <TableRow-->
+<!--                    android:layout_marginBottom="10dp">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        style="@style/table_column_2"-->
+<!--                        android:text="আমার খারপ অভ্যাস সমূহ"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:layout_weight="1"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        style="@style/table_column_2"-->
+<!--                        android:text="এই অভ্যাসসমূহ থেকে বেরিয়ে আসার জন্য আমি কি করব"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="2"/>-->
+<!--                </TableRow>-->
+
+                <TableRow
+                    android:layout_marginBottom="5dp">
+                    <EditText
+                        android:layout_width="0dp"
+                        style="@style/table_column_7"
+                        android:minHeight="30dp"
+                        android:hint="১. আপনার একটি খারপ অভ্যাস লিখুন"
+                        android:id="@+id/habit_1"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="20dp">
+                    <EditText
+                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:layout_width="0dp"
+                        style="@style/table_column_7"
+                        android:id="@+id/solve_1"
+                        android:minHeight="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp">
+                    <EditText
+                        android:layout_width="0dp"
+                        style="@style/table_column_8"
+                        android:minHeight="30dp"
+                        android:hint="২. আপনার একটি খারপ অভ্যাস লিখুন"
+                        android:id="@+id/habit_2"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="20dp">
+                    <EditText
+                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:layout_width="0dp"
+                        style="@style/table_column_8"
+                        android:id="@+id/solve_2"
+                        android:minHeight="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp">
+                    <EditText
+                        android:layout_width="0dp"
+                        style="@style/table_column_7"
+                        android:minHeight="30dp"
+                        android:hint="৩. আপনার একটি খারপ অভ্যাস লিখুন"
+                        android:id="@+id/habit_3"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="20dp">
+                    <EditText
+                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:layout_width="0dp"
+                        style="@style/table_column_7"
+                        android:id="@+id/solve_3"
+                        android:minHeight="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp">
+                    <EditText
+                        android:layout_width="0dp"
+                        style="@style/table_column_8"
+                        android:minHeight="30dp"
+                        android:hint="৪. আপনার একটি খারপ অভ্যাস লিখুন"
+                        android:id="@+id/habit_4"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="20dp">
+                    <EditText
+                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:layout_width="0dp"
+                        style="@style/table_column_8"
+                        android:id="@+id/solve_4"
+                        android:minHeight="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_marginBottom="5dp">
+                    <EditText
+                        android:layout_width="0dp"
+                        style="@style/table_column_7"
+                        android:minHeight="30dp"
+                        android:hint="৫. আপনার একটি খারপ অভ্যাস লিখুন"
+                        android:id="@+id/habit_5"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="20dp">
+                    <EditText
+                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:layout_width="0dp"
+                        style="@style/table_column_7"
+                        android:id="@+id/solve_5"
+                        android:minHeight="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp">
+                    <EditText
+                        android:layout_width="0dp"
+                        style="@style/table_column_8"
+                        android:minHeight="30dp"
+                        android:hint="৬. আপনার একটি খারপ অভ্যাস লিখুন"
+                        android:id="@+id/habit_6"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="20dp">
+                    <EditText
+                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:layout_width="0dp"
+                        style="@style/table_column_8"
+                        android:id="@+id/solve_6"
+                        android:minHeight="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_marginBottom="5dp">
+                    <EditText
+                        android:layout_width="0dp"
+                        style="@style/table_column_7"
+                        android:minHeight="30dp"
+                        android:hint="৭. আপনার একটি খারপ অভ্যাস লিখুন"
+                        android:id="@+id/habit_7"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="20dp">
+                    <EditText
+                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:layout_width="0dp"
+                        style="@style/table_column_7"
+                        android:id="@+id/solve_7"
+                        android:minHeight="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp">
+                    <EditText
+                        android:layout_width="0dp"
+                        style="@style/table_column_8"
+                        android:minHeight="30dp"
+                        android:hint="৮. আপনার একটি খারপ অভ্যাস লিখুন"
+                        android:id="@+id/habit_8"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="20dp">
+                    <EditText
+                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:layout_width="0dp"
+                        style="@style/table_column_8"
+                        android:id="@+id/solve_8"
+                        android:minHeight="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+                </TableRow>
+
+
+
+
+
+                <TableRow
+                    android:layout_marginBottom="5dp">
+                    <EditText
+                        android:layout_width="0dp"
+                        style="@style/table_column_7"
+                        android:minHeight="30dp"
+                        android:hint="৯. আপনার একটি খারপ অভ্যাস লিখুন"
+                        android:id="@+id/habit_9"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="20dp">
+                    <EditText
+                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:layout_width="0dp"
+                        style="@style/table_column_7"
+                        android:id="@+id/solve_9"
+                        android:minHeight="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp">
+                    <EditText
+                        android:layout_width="0dp"
+                        style="@style/table_column_8"
+                        android:minHeight="30dp"
+                        android:hint="১০. আপনার একটি খারপ অভ্যাস লিখুন"
+                        android:id="@+id/habit_10"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="20dp">
+                    <EditText
+                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:layout_width="0dp"
+                        style="@style/table_column_8"
+                        android:id="@+id/solve_10"
+                        android:minHeight="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/save_habit"
+        android:text="সেইভ করুন"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/sky"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

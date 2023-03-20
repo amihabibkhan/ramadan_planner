@@ -29,11 +29,11 @@
             android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:paddingTop="50dp"
+                android:paddingTop="20dp"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
                 <LinearLayout
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
@@ -43,50 +43,53 @@
                         android:layout_weight="1"
                         android:id="@+id/ramadanList"
                         android:gravity="center"
-                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginHorizontal="10dp"
                         android:orientation="vertical"
                         android:layout_height="wrap_content">
                         <ImageView
-                            android:layout_width="50dp"
+                            android:layout_width="40dp"
                             android:src="@drawable/report"
                             android:layout_marginBottom="8dp"
                             android:adjustViewBounds="true"
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="match_parent"
-                            android:textSize="16dp"
+                            android:textSize="14sp"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:text="রমাদান রিপোর্ট"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
+
                     <LinearLayout
-                        android:background="@drawable/home_menu"
-                        android:layout_width="0dp"
-                        android:padding="10dp"
-                        android:layout_weight="1"
                         android:id="@+id/montlyPlan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_menu"
                         android:gravity="center"
-                        android:layout_marginHorizontal="15dp"
                         android:orientation="vertical"
-                        android:layout_height="wrap_content">
+                        android:padding="10dp">
+
                         <ImageView
-                            android:layout_width="50dp"
-                            android:src="@drawable/plan"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginBottom="8dp"
                             android:adjustViewBounds="true"
-                            android:layout_height="wrap_content"/>
+                            android:src="@drawable/plan" />
+
                         <TextView
                             android:layout_width="match_parent"
-                            android:textSize="16dp"
+                            android:layout_height="wrap_content"
+                            android:text="মাসিক পরিকল্পনা"
                             android:textAlignment="center"
                             android:textColor="@color/black"
-                            android:text="মাসিক পরিকল্পনা"
-                            android:layout_height="wrap_content"/>
+                            android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
@@ -96,18 +99,18 @@
                         android:layout_weight="1"
                         android:id="@+id/dua"
                         android:gravity="center"
-                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginHorizontal="10dp"
                         android:orientation="vertical"
                         android:layout_height="wrap_content">
                         <ImageView
-                            android:layout_width="50dp"
+                            android:layout_width="40dp"
                             android:src="@drawable/pray"
                             android:layout_marginBottom="8dp"
                             android:adjustViewBounds="true"
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="match_parent"
-                            android:textSize="16dp"
+                            android:textSize="14sp"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:text="প্রতিদিনের দোয়া"
@@ -120,18 +123,18 @@
                         android:padding="10dp"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginHorizontal="10dp"
                         android:orientation="vertical"
                         android:layout_height="wrap_content">
                         <ImageView
-                            android:layout_width="50dp"
-                            android:src="@drawable/confidence"
+                            android:layout_width="40dp"
+                            android:src="@drawable/prottoy"
                             android:layout_marginBottom="8dp"
                             android:adjustViewBounds="true"
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="match_parent"
-                            android:textSize="16dp"
+                            android:textSize="14sp"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:text="আমার প্রত্যয়"
@@ -139,7 +142,7 @@
                     </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
@@ -147,23 +150,23 @@
                         android:layout_width="0dp"
                         android:padding="10dp"
                         android:layout_weight="1"
-                        android:id="@+id/goal"
+                        android:id="@+id/habit"
                         android:gravity="center"
-                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginHorizontal="10dp"
                         android:orientation="vertical"
                         android:layout_height="wrap_content">
                         <ImageView
-                            android:layout_width="50dp"
-                            android:src="@drawable/goal"
+                            android:layout_width="40dp"
+                            android:src="@drawable/habits"
                             android:layout_marginBottom="8dp"
                             android:adjustViewBounds="true"
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="match_parent"
-                            android:textSize="16dp"
+                            android:textSize="14sp"
                             android:textAlignment="center"
                             android:textColor="@color/black"
-                            android:text="লক্ষ্য"
+                            android:text="অভ্যাস পরিবর্তন"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                     <LinearLayout
@@ -173,18 +176,18 @@
                         android:id="@+id/ramadanImportance"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginHorizontal="10dp"
                         android:orientation="vertical"
                         android:layout_height="wrap_content">
                         <ImageView
-                            android:layout_width="50dp"
+                            android:layout_width="40dp"
                             android:src="@drawable/message"
                             android:layout_marginBottom="8dp"
                             android:adjustViewBounds="true"
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="match_parent"
-                            android:textSize="16dp"
+                            android:textSize="14sp"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:text="রমাদান প্ল্যানার"
@@ -193,7 +196,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
@@ -203,18 +206,18 @@
                         android:layout_weight="1"
                         android:id="@+id/at_a_glance"
                         android:gravity="center"
-                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginHorizontal="10dp"
                         android:orientation="vertical"
                         android:layout_height="wrap_content">
                         <ImageView
-                            android:layout_width="50dp"
+                            android:layout_width="40dp"
                             android:src="@drawable/report_output"
                             android:layout_marginBottom="8dp"
                             android:adjustViewBounds="true"
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="match_parent"
-                            android:textSize="16dp"
+                            android:textSize="14sp"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:text="একনজরে রমাদান"
@@ -227,18 +230,18 @@
                         android:id="@+id/about_app"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginHorizontal="10dp"
                         android:orientation="vertical"
                         android:layout_height="wrap_content">
                         <ImageView
-                            android:layout_width="50dp"
+                            android:layout_width="40dp"
                             android:src="@drawable/info"
                             android:layout_marginBottom="8dp"
                             android:adjustViewBounds="true"
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:layout_width="match_parent"
-                            android:textSize="16dp"
+                            android:textSize="14sp"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:text="এ্যাপ সম্পর্কে"

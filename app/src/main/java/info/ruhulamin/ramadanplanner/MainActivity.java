@@ -10,10 +10,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+import java.util.Random;
+
+import info.ruhulamin.ramadanplanner.CustomDialog.CustomDialog;
+import info.ruhulamin.ramadanplanner.StaticData.StaticData;
 
 public class MainActivity extends AppCompatActivity {
-
-    LinearLayout dua, ramadanImportance, at_a_glance, about_app, amarProttoy, montlyPlan, ramadanList, goal;
+    Dialog  randomDialog;
+    LinearLayout dua, ramadanImportance, at_a_glance, about_app, amarProttoy, montlyPlan, ramadanList, habit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         ramadanImportance = (LinearLayout) findViewById(R.id.ramadanImportance);
         montlyPlan = (LinearLayout) findViewById(R.id.montlyPlan);
         amarProttoy = (LinearLayout) findViewById(R.id.amarProttoy);
-        goal = (LinearLayout) findViewById(R.id.goal);
+        habit = (LinearLayout) findViewById(R.id.habit);
         dua = (LinearLayout) findViewById(R.id.dua);
         ramadanList = (LinearLayout) findViewById(R.id.ramadanList);
         at_a_glance = (LinearLayout) findViewById(R.id.at_a_glance);
@@ -36,6 +40,27 @@ public class MainActivity extends AppCompatActivity {
         Intent ramadanListIntent = new Intent(MainActivity.this, RamadanListActivity.class);
         Intent atAGlanceIntent = new Intent(MainActivity.this, AtAGlanceActivity.class);
         Intent aboutAppIntent = new Intent(MainActivity.this, AboutActivity.class);
+        Intent habitIntent = new Intent(MainActivity.this, HabitActivity.class);
+
+        // showing random dialogue
+        Random rand = new Random();
+        int randNumber = rand.nextInt(30) + 1;
+        int randNumber2 = rand.nextInt(2);
+
+        if (randNumber2 == 0){
+            String contentString = new StaticData().bestTask[randNumber];
+            randomDialog = new CustomDialog().customDialog(this, "আজকের সেরা কাজ", contentString, R.drawable.like);
+        } else if (randNumber2 == 1) {
+            String contentString = new StaticData().ayahHadith[randNumber];
+            randomDialog = new CustomDialog().customDialog(this, "আজকের আয়াত/হাদিস", contentString, R.drawable.quran, "শুকরান");
+        } else if(randNumber2 == 2) {
+            String contentString = new StaticData().tips[randNumber];
+            randomDialog = new CustomDialog().customDialog(this,  contentString);
+        }else{
+            randomDialog = new CustomDialog().customDialog(this, "আসসালামু আলাইকুম", "রমাদান প্ল্যানার এ্যাপে আপনাকে স্বাগতম। প্রতিদিনের রিপোর্ট প্রতিদিন দেওয়ার চেষ্টা করুন। কুরআন নাযিলের মাসে বেশি বেশি কুরআন তেলাওয়াত করুন।", R.drawable.like);
+        }
+
+        randomDialog.show();
 
         ramadanImportance.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,10 +97,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        goal.setOnClickListener(new View.OnClickListener() {
+        habit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "কাজ চলমান রয়েছে!", Toast.LENGTH_SHORT).show();
+                startActivity(habitIntent);
             }
         });
         about_app.setOnClickListener(new View.OnClickListener() {
