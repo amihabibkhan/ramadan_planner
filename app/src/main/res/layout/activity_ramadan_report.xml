@@ -32,6 +32,47 @@
                     android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
+                        android:text="আজকের তারিখ"
+                        style="@style/heading_1"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="3"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="dd-mm-yyyy"
+                        android:textColor="@color/black"
+                        android:id="@+id/date_of_the_day"
+                        android:layout_weight="2"
+                        android:textAlignment="center"
+                        android:paddingVertical="10dp"
+                        android:background="@drawable/round_button"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- card end -->
+
+
+            <!-- card start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="7dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/ramadan_report_card"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:text="আজকের দিনের"
                         style="@style/heading_1"
                         android:layout_height="wrap_content"/>

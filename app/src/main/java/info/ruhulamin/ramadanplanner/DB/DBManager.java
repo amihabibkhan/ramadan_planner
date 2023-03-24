@@ -24,8 +24,9 @@ public class DBManager extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE plans (id INTEGER PRIMARY KEY AUTOINCREMENT, plan_for INTEGER, plan_value INTEGER)");
         db.execSQL("CREATE TABLE reports (id INTEGER PRIMARY KEY AUTOINCREMENT, ramadan_id INTEGER, check_list_1 INTEGER, check_list_2 INTEGER, check_list_3 INTEGER, check_list_4 INTEGER, check_list_5 INTEGER, check_list_6 INTEGER, check_list_7 INTEGER, check_list_8 INTEGER, check_list_9 INTEGER," +
                 "tilawat_ayah INTEGER, tilawat_sura INTEGER, memorize_ayah INTEGER, memorize_sura INTEGER, fazar_f INTEGER, fazar_s INTEGER, zohor_f INTEGER, zohor_s INTEGER, asor_f INTEGER, asor_s INTEGER, magrib_f INTEGER, magrib_s INTEGER, isha_f INTEGER, isha_s INTEGER, tarabih INTEGER, tahazzud INTEGER," +
-                "self_criticism TEXT, achievement TEXT)");
+                "self_criticism TEXT, achievement TEXT, date TEXT)");
         db.execSQL("CREATE TABLE habits (id INTEGER PRIMARY KEY AUTOINCREMENT, habit TEXT, solve TEXT)");
+        db.execSQL("CREATE TABLE achievements (id INTEGER PRIMARY KEY AUTOINCREMENT, long_plan TEXT, short_plan TEXT)");
     }
 
 
@@ -34,6 +35,7 @@ public class DBManager extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS plans");
         db.execSQL("DROP TABLE IF EXISTS reports");
         db.execSQL("DROP TABLE IF EXISTS habits");
+        db.execSQL("DROP TABLE IF EXISTS achievements");
         onCreate(db);
     }
 
@@ -53,6 +55,15 @@ public class DBManager extends SQLiteOpenHelper {
         updateValue.put("solve", solve);
 
         db.update("habits", updateValue, "id = " + habit_id, null);
+    }
+    public void updateAchievement(int plan_id, String long_plan, String short_plan){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues updateValue = new ContentValues();
+
+        updateValue.put("long_plan", long_plan);
+        updateValue.put("short_plan", short_plan);
+
+        db.update("achievements", updateValue, "id = " + plan_id, null);
     }
 
     public void updateReport(ReportModel newData, int ramadan_id){
@@ -89,6 +100,7 @@ public class DBManager extends SQLiteOpenHelper {
         updateValue.put("memorize_sura", newData.getMemorize_sura());
         updateValue.put("self_criticism", newData.getSelf_criticism());
         updateValue.put("achievement", newData.getAchievement());
+        updateValue.put("date", newData.getDate());
 
         db.update("reports", updateValue, "ramadan_id = " + ramadan_id, null);
     }
@@ -115,8 +127,20 @@ public class DBManager extends SQLiteOpenHelper {
             addHabitFirstTime();
         }
     }
+    public void checkAchievementTable() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String Query = "Select * from achievements";
+
+        Cursor cursor = db.rawQuery(Query, null);
+
+        if(cursor.getCount() <= 0){
+            db.execSQL("DELETE FROM achievements");
+            addAchievementFirstTime();
+        }
+    }
 
     public void checkReportTable() {
+
         SQLiteDatabase db = this.getWritableDatabase();
         String Query = "Select * from reports";
 
@@ -155,6 +179,15 @@ public class DBManager extends SQLiteOpenHelper {
             db.insert("habits", null, values);
         }
     }
+    public void addAchievementFirstTime(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        for (int i = 1; i <= 10; i++){
+            values.put("long_plan", "");
+            values.put("short_plan", "");
+            db.insert("achievements", null, values);
+        }
+    }
 
     public String getSingleHabitData(int id, int column_index){
         SQLiteDatabase db = this.getReadableDatabase();
@@ -170,6 +203,22 @@ public class DBManager extends SQLiteOpenHelper {
 
         return data;
     }
+    public String getSingleAchievementData(int id, int column_index){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM achievements WHERE id = " + id, null);
+        String data = null;
+
+        if(cursor!=null && cursor.getCount()>0) {
+            cursor.moveToFirst();
+            do {
+                data = cursor.getString(column_index);
+            } while (cursor.moveToNext());
+        }
+
+        return data;
+    }
+
+
     public String getSingleData(int plan_for){
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM plans WHERE plan_for = " + plan_for, null);
@@ -228,6 +277,7 @@ public class DBManager extends SQLiteOpenHelper {
 
                 data.setSelf_criticism(cursor.getString(27));
                 data.setAchievement(cursor.getString(28));
+                data.setDate(cursor.getString(29));
 
             } while (cursor.moveToNext());
         }

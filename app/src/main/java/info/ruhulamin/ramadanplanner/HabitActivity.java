@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -27,8 +28,19 @@ public class HabitActivity extends AppCompatActivity {
         initIDS();
 
         plan_db = new DBManager(this);
-        plan_db.checkHabitTable();
 
+        SharedPreferences dbCheck = getSharedPreferences("dbCheck", MODE_PRIVATE);
+        Boolean habitTable = dbCheck.getBoolean("habitTable", true);
+        if (habitTable){
+            try {
+                plan_db.addHabitFirstTime();
+            }catch (Exception e){
+                Toast.makeText(this, "Something Getting Error!", Toast.LENGTH_SHORT).show();
+            }
+            SharedPreferences.Editor dbCheckEditor = dbCheck.edit();
+            dbCheckEditor.putBoolean("habitTable", false);
+            dbCheckEditor.apply();
+        }
         setTextToEditText();
 
         ProgressDialog pDialog = new ProgressDialog(HabitActivity.this);

@@ -29,26 +29,27 @@
             android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:paddingTop="20dp"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
+
                 <LinearLayout
                     android:layout_marginBottom="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+                    <!-- রমাদান প্ল্যানার -->
                     <LinearLayout
                         android:background="@drawable/home_menu"
                         android:layout_width="0dp"
                         android:padding="10dp"
+                        android:id="@+id/ramadanImportance"
                         android:layout_weight="1"
-                        android:id="@+id/ramadanList"
                         android:gravity="center"
                         android:layout_marginHorizontal="10dp"
                         android:orientation="vertical"
                         android:layout_height="wrap_content">
                         <ImageView
                             android:layout_width="40dp"
-                            android:src="@drawable/report"
+                            android:src="@drawable/message"
                             android:layout_marginBottom="8dp"
                             android:adjustViewBounds="true"
                             android:layout_height="wrap_content"/>
@@ -57,10 +58,44 @@
                             android:textSize="14sp"
                             android:textAlignment="center"
                             android:textColor="@color/black"
-                            android:text="রমাদান রিপোর্ট"
+                            android:text="রমাদান প্ল্যানার"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
 
+                    <!-- আমার প্রত্যয় -->
+                    <LinearLayout
+                        android:background="@drawable/home_menu"
+                        android:layout_width="0dp"
+                        android:id="@+id/amarProttoy"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:src="@drawable/prottoy"
+                            android:layout_marginBottom="8dp"
+                            android:adjustViewBounds="true"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textSize="14sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:text="আমার প্রত্যয়"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- মাসিক পরিকল্পনা -->
                     <LinearLayout
                         android:id="@+id/montlyPlan"
                         android:layout_width="0dp"
@@ -87,64 +122,8 @@
                             android:textColor="@color/black"
                             android:textSize="14sp" />
                     </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginBottom="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <LinearLayout
-                        android:background="@drawable/home_menu"
-                        android:layout_width="0dp"
-                        android:padding="10dp"
-                        android:layout_weight="1"
-                        android:id="@+id/dua"
-                        android:gravity="center"
-                        android:layout_marginHorizontal="10dp"
-                        android:orientation="vertical"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:src="@drawable/pray"
-                            android:layout_marginBottom="8dp"
-                            android:adjustViewBounds="true"
-                            android:layout_height="wrap_content"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:textSize="14sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:text="প্রতিদিনের দোয়া"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:background="@drawable/home_menu"
-                        android:layout_width="0dp"
-                        android:id="@+id/amarProttoy"
-                        android:padding="10dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:layout_marginHorizontal="10dp"
-                        android:orientation="vertical"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:src="@drawable/prottoy"
-                            android:layout_marginBottom="8dp"
-                            android:adjustViewBounds="true"
-                            android:layout_height="wrap_content"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:textSize="14sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:text="আমার প্রত্যয়"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginBottom="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+
+                    <!-- অভ্যাস পরিবর্তন -->
                     <LinearLayout
                         android:background="@drawable/home_menu"
                         android:layout_width="0dp"
@@ -169,19 +148,28 @@
                             android:text="অভ্যাস পরিবর্তন"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- অর্জন -->
                     <LinearLayout
                         android:background="@drawable/home_menu"
                         android:layout_width="0dp"
                         android:padding="10dp"
-                        android:id="@+id/ramadanImportance"
                         android:layout_weight="1"
+                        android:id="@+id/achievement_plan"
                         android:gravity="center"
                         android:layout_marginHorizontal="10dp"
                         android:orientation="vertical"
                         android:layout_height="wrap_content">
                         <ImageView
                             android:layout_width="40dp"
-                            android:src="@drawable/message"
+                            android:src="@drawable/goal"
                             android:layout_marginBottom="8dp"
                             android:adjustViewBounds="true"
                             android:layout_height="wrap_content"/>
@@ -190,7 +178,33 @@
                             android:textSize="14sp"
                             android:textAlignment="center"
                             android:textColor="@color/black"
-                            android:text="রমাদান প্ল্যানার"
+                            android:text="যা অর্জন করতে চাই"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <!-- রমাদান রিপোর্ট -->
+                    <LinearLayout
+                        android:background="@drawable/home_menu"
+                        android:layout_width="0dp"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:id="@+id/ramadanList"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:src="@drawable/report"
+                            android:layout_marginBottom="8dp"
+                            android:adjustViewBounds="true"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textSize="14sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:text="রমাদান রিপোর্ট"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -199,6 +213,8 @@
                     android:layout_marginBottom="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
+                    <!-- একনজরে রমাদান -->
                     <LinearLayout
                         android:background="@drawable/home_menu"
                         android:layout_width="0dp"
@@ -223,6 +239,41 @@
                             android:text="একনজরে রমাদান"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
+                    <!-- প্রতিদিনের দোয়া -->
+                    <LinearLayout
+                        android:background="@drawable/home_menu"
+                        android:layout_width="0dp"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:id="@+id/dua"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:src="@drawable/pray"
+                            android:layout_marginBottom="8dp"
+                            android:adjustViewBounds="true"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textSize="14sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:text="প্রতিদিনের দোয়া"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <!-- এ্যাপ সম্পর্কে -->
                     <LinearLayout
                         android:background="@drawable/home_menu"
                         android:layout_width="0dp"

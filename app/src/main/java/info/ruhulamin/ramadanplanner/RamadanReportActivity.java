@@ -5,9 +5,11 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 
+import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -15,6 +17,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,13 +25,15 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 
+import java.util.Calendar;
+
 import info.ruhulamin.ramadanplanner.CustomDialog.CustomDialog;
 import info.ruhulamin.ramadanplanner.DB.DBManager;
 import info.ruhulamin.ramadanplanner.Model.RamadanIdAndTitle;
 import info.ruhulamin.ramadanplanner.Model.ReportModel;
 import info.ruhulamin.ramadanplanner.StaticData.StaticData;
 
-public class RamadanReportActivity extends AppCompatActivity {
+public class RamadanReportActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
     DBManager plan_db;
     int ramadan_id;
     Button save_report;
@@ -36,6 +41,7 @@ public class RamadanReportActivity extends AppCompatActivity {
     CheckBox check_list_1, check_list_2, check_list_3, check_list_4, check_list_5, check_list_6, check_list_7, check_list_8, check_list_9;
     CheckBox fazar_f, fazar_s, zohor_f, zohor_s, asor_f, asor_s, magrib_f, magrib_s, isha_f, isha_s, tarabih, tahazzud;
     EditText tilawat_ayah, tilawat_sura, memorize_ayah, memorize_sura, self_criticism, achievement;
+    TextView date_of_the_day;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,12 +53,28 @@ public class RamadanReportActivity extends AppCompatActivity {
         ramadan_id = ramadanIdAndTitle.getRamadanId();
         // type casting
         initIDS();
-
         plan_db = new DBManager(this);
-        plan_db.checkReportTable();
+
+        SharedPreferences dbCheck = getSharedPreferences("dbCheck", MODE_PRIVATE);
+        Boolean reportTable = dbCheck.getBoolean("reportTable", true);
+        if (reportTable){
+            try {
+                plan_db.addReportFirstTime();
+            }catch (Exception e){
+                Toast.makeText(this, "Something Getting Error!", Toast.LENGTH_SHORT).show();
+            }
+            SharedPreferences.Editor dbCheckEditor = dbCheck.edit();
+            dbCheckEditor.putBoolean("reportTable", false);
+            dbCheckEditor.apply();
+        }
 
         ReportModel getData = plan_db.getReportSingleData(ramadan_id);
-        setContentToView(getData);
+
+        try {
+            setContentToView(getData);
+        }catch (Exception e){
+            Toast.makeText(this, "Something Getting error!", Toast.LENGTH_SHORT).show();
+        }
 
         String tips_today_string = new StaticData().tips[ramadan_id-1];
         String best_task_string = new StaticData().bestTask[ramadan_id-1];
@@ -101,12 +123,30 @@ public class RamadanReportActivity extends AppCompatActivity {
             }
         });
 
+        date_of_the_day.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDatePicker();
+            }
+        });
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 tipsDialog.show();
             }
         }, 500);
+    }
+
+    private void showDatePicker(){
+        DatePickerDialog datePickerDialog = new DatePickerDialog(
+                this, this,
+                Calendar.getInstance().get(Calendar.YEAR),
+                Calendar.getInstance().get(Calendar.MONTH),
+                Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
+                );
+
+        datePickerDialog.show();
     }
 
     public void setContentToView(ReportModel data){
@@ -139,6 +179,7 @@ public class RamadanReportActivity extends AppCompatActivity {
         memorize_sura.setText(data.getMemorize_sura());
         self_criticism.setText(data.getSelf_criticism());
         achievement.setText(data.getAchievement());
+        date_of_the_day.setText(data.getDate() != null ? data.getDate() : "DD-MM-YYYY");
     }
 
     public boolean returnCheckBoolean(int value){
@@ -181,6 +222,7 @@ public class RamadanReportActivity extends AppCompatActivity {
         inputtedData.setMemorize_sura(memorize_sura.getText().toString());
         inputtedData.setSelf_criticism(self_criticism.getText().toString());
         inputtedData.setAchievement(achievement.getText().toString());
+        inputtedData.setDate(date_of_the_day.getText().toString());
 
 //        Gson t = new Gson();
 //        String my_t = t.toJson(inputtedData);
@@ -224,8 +266,15 @@ public class RamadanReportActivity extends AppCompatActivity {
         achievement = (EditText) findViewById(R.id.achievement);
 
         save_report = (Button) findViewById(R.id.save_report);
+
+        date_of_the_day = (TextView) findViewById(R.id.date_of_the_day);
     }
 
+    @Override
+    public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+        String dateString =  day + "-" + (month + 1) + "-" + year;
+        date_of_the_day.setText(dateString);
+    }
 }
 
 

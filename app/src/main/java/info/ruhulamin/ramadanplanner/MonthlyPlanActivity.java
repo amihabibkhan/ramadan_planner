@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -28,9 +29,27 @@ public class MonthlyPlanActivity extends AppCompatActivity {
         initIDS();
 
         plan_db = new DBManager(this);
-        plan_db.checkPlanTable();
 
-        setTextToEditText();
+        SharedPreferences dbCheck = getSharedPreferences("dbCheck", MODE_PRIVATE);
+        Boolean planTable = dbCheck.getBoolean("planTable", true);
+        if (planTable){
+            try {
+                plan_db.addPlanFirstTime();
+            }catch (Exception e){
+                Toast.makeText(this, "Something Getting Error!", Toast.LENGTH_SHORT).show();
+            }
+            SharedPreferences.Editor dbCheckEditor = dbCheck.edit();
+            dbCheckEditor.putBoolean("planTable", false);
+            dbCheckEditor.apply();
+        }
+
+
+        try {
+            setTextToEditText();
+        }catch (Exception e){
+            Toast.makeText(this, "Something Getting wrong!", Toast.LENGTH_SHORT).show();
+        }
+
 
         ProgressDialog pDialog = new ProgressDialog(MonthlyPlanActivity.this);
         pDialog.setMessage("প্ল্যান সেইভ হচ্ছে...");

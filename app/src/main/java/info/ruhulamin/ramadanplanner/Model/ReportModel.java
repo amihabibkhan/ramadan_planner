@@ -3,39 +3,9 @@ package info.ruhulamin.ramadanplanner.Model;
 public class ReportModel {
     public int check_list_1, check_list_2, check_list_3, check_list_4, check_list_5, check_list_6, check_list_7, check_list_8, check_list_9,
             fazar_f, fazar_s, zohor_f, zohor_s, asor_f, asor_s, magrib_f, magrib_s, isha_f, isha_s, tarabih, tahazzud;
-    public String tilawat_ayah, tilawat_sura, memorize_ayah, memorize_sura, self_criticism, achievement;
+    public String tilawat_ayah, tilawat_sura, memorize_ayah, memorize_sura, self_criticism, achievement, date;
 
     public ReportModel() {
-    }
-
-    public ReportModel(int check_list_1, int check_list_2, int check_list_3, int check_list_4, int check_list_5, int check_list_6, int check_list_7, int check_list_8, int check_list_9, int fazar_f, int fazar_s, int zohor_f, int zohor_s, int asor_f, int asor_s, int magrib_f, int magrib_s, int isha_f, int isha_s, int tarabih, int tahazzud, String tilawat_ayah, String tilawat_sura, String memorize_ayah, String memorize_sura, String self_criticism, String achievement) {
-        this.check_list_1 = check_list_1;
-        this.check_list_2 = check_list_2;
-        this.check_list_3 = check_list_3;
-        this.check_list_4 = check_list_4;
-        this.check_list_5 = check_list_5;
-        this.check_list_6 = check_list_6;
-        this.check_list_7 = check_list_7;
-        this.check_list_8 = check_list_8;
-        this.check_list_9 = check_list_9;
-        this.fazar_f = fazar_f;
-        this.fazar_s = fazar_s;
-        this.zohor_f = zohor_f;
-        this.zohor_s = zohor_s;
-        this.asor_f = asor_f;
-        this.asor_s = asor_s;
-        this.magrib_f = magrib_f;
-        this.magrib_s = magrib_s;
-        this.isha_f = isha_f;
-        this.isha_s = isha_s;
-        this.tarabih = tarabih;
-        this.tahazzud = tahazzud;
-        this.tilawat_ayah = tilawat_ayah;
-        this.tilawat_sura = tilawat_sura;
-        this.memorize_ayah = memorize_ayah;
-        this.memorize_sura = memorize_sura;
-        this.self_criticism = self_criticism;
-        this.achievement = achievement;
     }
 
     public int getCheck_list_1() {
@@ -252,5 +222,44 @@ public class ReportModel {
 
     public void setAchievement(String achievement) {
         this.achievement = achievement;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public ReportModel(int check_list_1, int check_list_2, int check_list_3, int check_list_4, int check_list_5, int check_list_6, int check_list_7, int check_list_8, int check_list_9, int fazar_f, int fazar_s, int zohor_f, int zohor_s, int asor_f, int asor_s, int magrib_f, int magrib_s, int isha_f, int isha_s, int tarabih, int tahazzud, String tilawat_ayah, String tilawat_sura, String memorize_ayah, String memorize_sura, String self_criticism, String achievement, String date) {
+        this.check_list_1 = check_list_1;
+        this.check_list_2 = check_list_2;
+        this.check_list_3 = check_list_3;
+        this.check_list_4 = check_list_4;
+        this.check_list_5 = check_list_5;
+        this.check_list_6 = check_list_6;
+        this.check_list_7 = check_list_7;
+        this.check_list_8 = check_list_8;
+        this.check_list_9 = check_list_9;
+        this.fazar_f = fazar_f;
+        this.fazar_s = fazar_s;
+        this.zohor_f = zohor_f;
+        this.zohor_s = zohor_s;
+        this.asor_f = asor_f;
+        this.asor_s = asor_s;
+        this.magrib_f = magrib_f;
+        this.magrib_s = magrib_s;
+        this.isha_f = isha_f;
+        this.isha_s = isha_s;
+        this.tarabih = tarabih;
+        this.tahazzud = tahazzud;
+        this.tilawat_ayah = tilawat_ayah;
+        this.tilawat_sura = tilawat_sura;
+        this.memorize_ayah = memorize_ayah;
+        this.memorize_sura = memorize_sura;
+        this.self_criticism = self_criticism;
+        this.achievement = achievement;
+        this.date = date;
     }
 }

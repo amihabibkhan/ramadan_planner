@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HabitActivity">
+    tools:context=".AchievementPlanActivity">
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_above="@+id/save_habit"
+        android:layout_above="@+id/save_achievement"
         android:padding="15dp"
         android:id="@+id/svHabit"
         android:layout_height="wrap_content">
@@ -17,12 +18,29 @@
             android:layout_height="wrap_content">
             <TextView
                 android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:paddingHorizontal="30dp"
+                android:text="ব্যর্থ মানুষেরা দুই প্রকার"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="center"
+                android:text="এক প্রকার হলো, যারা কাজের পরিকল্পনা করেছে কিন্তু কাজ করেনি! আরেক প্রকার হলো, যারা কাজ করেছে কিন্তু পরিকল্পনা গ্রহণ করেনি!"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
                 android:textColor="@color/sky"
                 android:textStyle="bold"
                 android:textSize="24dp"
                 android:layout_marginBottom="20dp"
                 android:textAlignment="center"
-                android:text="আরও উত্তম হওয়ার জন্য\nএই রামাদানকে কাজে লাগান"
+                android:text="আমি এই রমাদানে কী\n অর্জন করতে চাই?"
                 android:layout_height="wrap_content"/>
             <TableLayout
                 android:layout_width="match_parent"
@@ -33,9 +51,9 @@
                     <EditText
                         android:layout_width="0dp"
                         style="@style/table_column_7"
-                        android:minHeight="30dp"
-                        android:hint="১. আপনার একটি খারাপ অভ্যাস লিখুন"
-                        android:id="@+id/habit_1"
+                        android:minHeight="50dp"
+                        android:hint="১. দীর্ঘমেয়াদী পরিকল্পনা"
+                        android:id="@+id/long_plan_1"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
                 </TableRow>
@@ -43,10 +61,10 @@
                 <TableRow
                     android:layout_marginBottom="20dp">
                     <EditText
-                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:hint="স্বল্পমেয়াদী পরিকল্পনা"
                         android:layout_width="0dp"
                         style="@style/table_column_7"
-                        android:id="@+id/solve_1"
+                        android:id="@+id/short_plan_1"
                         android:minHeight="80dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"/>
@@ -57,19 +75,19 @@
                     <EditText
                         android:layout_width="0dp"
                         style="@style/table_column_8"
-                        android:minHeight="30dp"
-                        android:hint="২. আপনার একটি খারাপ অভ্যাস লিখুন"
-                        android:id="@+id/habit_2"
+                        android:minHeight="50dp"
+                        android:hint="২. দীর্ঘমেয়াদী পরিকল্পনা"
+                        android:id="@+id/long_plan_2"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
                 </TableRow>
                 <TableRow
                     android:layout_marginBottom="20dp">
                     <EditText
-                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:hint="স্বল্পমেয়াদী পরিকল্পনা"
                         android:layout_width="0dp"
                         style="@style/table_column_8"
-                        android:id="@+id/solve_2"
+                        android:id="@+id/short_plan_2"
                         android:minHeight="80dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"/>
@@ -80,19 +98,19 @@
                     <EditText
                         android:layout_width="0dp"
                         style="@style/table_column_7"
-                        android:minHeight="30dp"
-                        android:hint="৩. আপনার একটি খারাপ অভ্যাস লিখুন"
-                        android:id="@+id/habit_3"
+                        android:minHeight="50dp"
+                        android:hint="৩. দীর্ঘমেয়াদী পরিকল্পনা"
+                        android:id="@+id/long_plan_3"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
                 </TableRow>
                 <TableRow
                     android:layout_marginBottom="20dp">
                     <EditText
-                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:hint="স্বল্পমেয়াদী পরিকল্পনা"
                         android:layout_width="0dp"
                         style="@style/table_column_7"
-                        android:id="@+id/solve_3"
+                        android:id="@+id/short_plan_3"
                         android:minHeight="80dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"/>
@@ -103,19 +121,19 @@
                     <EditText
                         android:layout_width="0dp"
                         style="@style/table_column_8"
-                        android:minHeight="30dp"
-                        android:hint="৪. আপনার একটি খারাপ অভ্যাস লিখুন"
-                        android:id="@+id/habit_4"
+                        android:minHeight="50dp"
+                        android:hint="৪. দীর্ঘমেয়াদী পরিকল্পনা"
+                        android:id="@+id/long_plan_4"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
                 </TableRow>
                 <TableRow
                     android:layout_marginBottom="20dp">
                     <EditText
-                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:hint="স্বল্পমেয়াদী পরিকল্পনা"
                         android:layout_width="0dp"
                         style="@style/table_column_8"
-                        android:id="@+id/solve_4"
+                        android:id="@+id/short_plan_4"
                         android:minHeight="80dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"/>
@@ -127,19 +145,19 @@
                     <EditText
                         android:layout_width="0dp"
                         style="@style/table_column_7"
-                        android:minHeight="30dp"
-                        android:hint="৫. আপনার একটি খারাপ অভ্যাস লিখুন"
-                        android:id="@+id/habit_5"
+                        android:minHeight="50dp"
+                        android:hint="৫. দীর্ঘমেয়াদী পরিকল্পনা"
+                        android:id="@+id/long_plan_5"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
                 </TableRow>
                 <TableRow
                     android:layout_marginBottom="20dp">
                     <EditText
-                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:hint="স্বল্পমেয়াদী পরিকল্পনা"
                         android:layout_width="0dp"
                         style="@style/table_column_7"
-                        android:id="@+id/solve_5"
+                        android:id="@+id/short_plan_5"
                         android:minHeight="80dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"/>
@@ -150,19 +168,19 @@
                     <EditText
                         android:layout_width="0dp"
                         style="@style/table_column_8"
-                        android:minHeight="30dp"
-                        android:hint="৬. আপনার একটি খারাপ অভ্যাস লিখুন"
-                        android:id="@+id/habit_6"
+                        android:minHeight="50dp"
+                        android:hint="৬. দীর্ঘমেয়াদী পরিকল্পনা"
+                        android:id="@+id/long_plan_6"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
                 </TableRow>
                 <TableRow
                     android:layout_marginBottom="20dp">
                     <EditText
-                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:hint="স্বল্পমেয়াদী পরিকল্পনা"
                         android:layout_width="0dp"
                         style="@style/table_column_8"
-                        android:id="@+id/solve_6"
+                        android:id="@+id/short_plan_6"
                         android:minHeight="80dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"/>
@@ -175,19 +193,19 @@
                     <EditText
                         android:layout_width="0dp"
                         style="@style/table_column_7"
-                        android:minHeight="30dp"
-                        android:hint="৭. আপনার একটি খারাপ অভ্যাস লিখুন"
-                        android:id="@+id/habit_7"
+                        android:minHeight="50dp"
+                        android:hint="৭. দীর্ঘমেয়াদী পরিকল্পনা"
+                        android:id="@+id/long_plan_7"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
                 </TableRow>
                 <TableRow
                     android:layout_marginBottom="20dp">
                     <EditText
-                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:hint="স্বল্পমেয়াদী পরিকল্পনা"
                         android:layout_width="0dp"
                         style="@style/table_column_7"
-                        android:id="@+id/solve_7"
+                        android:id="@+id/short_plan_7"
                         android:minHeight="80dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"/>
@@ -198,19 +216,19 @@
                     <EditText
                         android:layout_width="0dp"
                         style="@style/table_column_8"
-                        android:minHeight="30dp"
-                        android:hint="৮. আপনার একটি খারাপ অভ্যাস লিখুন"
-                        android:id="@+id/habit_8"
+                        android:minHeight="50dp"
+                        android:hint="৮. দীর্ঘমেয়াদী পরিকল্পনা"
+                        android:id="@+id/long_plan_8"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
                 </TableRow>
                 <TableRow
                     android:layout_marginBottom="20dp">
                     <EditText
-                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:hint="স্বল্পমেয়াদী পরিকল্পনা"
                         android:layout_width="0dp"
                         style="@style/table_column_8"
-                        android:id="@+id/solve_8"
+                        android:id="@+id/short_plan_8"
                         android:minHeight="80dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"/>
@@ -225,19 +243,19 @@
                     <EditText
                         android:layout_width="0dp"
                         style="@style/table_column_7"
-                        android:minHeight="30dp"
-                        android:hint="৯. আপনার একটি খারাপ অভ্যাস লিখুন"
-                        android:id="@+id/habit_9"
+                        android:minHeight="50dp"
+                        android:hint="৯. দীর্ঘমেয়াদী পরিকল্পনা"
+                        android:id="@+id/long_plan_9"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
                 </TableRow>
                 <TableRow
                     android:layout_marginBottom="20dp">
                     <EditText
-                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:hint="স্বল্পমেয়াদী পরিকল্পনা"
                         android:layout_width="0dp"
                         style="@style/table_column_7"
-                        android:id="@+id/solve_9"
+                        android:id="@+id/short_plan_9"
                         android:minHeight="80dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"/>
@@ -248,19 +266,19 @@
                     <EditText
                         android:layout_width="0dp"
                         style="@style/table_column_8"
-                        android:minHeight="30dp"
-                        android:hint="১০. আপনার একটি খারাপ অভ্যাস লিখুন"
-                        android:id="@+id/habit_10"
+                        android:minHeight="50dp"
+                        android:hint="১০. দীর্ঘমেয়াদী পরিকল্পনা"
+                        android:id="@+id/long_plan_10"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
                 </TableRow>
                 <TableRow
                     android:layout_marginBottom="20dp">
                     <EditText
-                        android:hint="এই অভ্যাস থেকে বেরিয়ে আসার জন্য যা করবেন"
+                        android:hint="স্বল্পমেয়াদী পরিকল্পনা"
                         android:layout_width="0dp"
                         style="@style/table_column_8"
-                        android:id="@+id/solve_10"
+                        android:id="@+id/short_plan_10"
                         android:minHeight="80dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"/>
@@ -271,11 +289,12 @@
 
     <Button
         android:layout_width="match_parent"
-        android:id="@+id/save_habit"
+        android:id="@+id/save_achievement"
         android:text="সেইভ করুন"
         android:textStyle="bold"
         android:textSize="18dp"
         android:layout_alignParentBottom="true"
         android:background="@color/sky"
         android:layout_height="wrap_content"/>
+
 </RelativeLayout>
