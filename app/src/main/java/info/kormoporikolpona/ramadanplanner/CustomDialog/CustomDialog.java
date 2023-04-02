@@ -1,4 +1,4 @@
-package info.ruhulamin.ramadanplanner.CustomDialog;
+package info.kormoporikolpona.ramadanplanner.CustomDialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import info.ruhulamin.ramadanplanner.R;
+import info.kormoporikolpona.ramadanplanner.R;
 
 public class CustomDialog {
     public Dialog customDialog(Context context){

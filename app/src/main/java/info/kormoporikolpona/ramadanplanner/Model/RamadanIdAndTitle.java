@@ -1,4 +1,4 @@
-package info.ruhulamin.ramadanplanner.Model;
+package info.kormoporikolpona.ramadanplanner.Model;
 
 public class RamadanIdAndTitle {
     int ramadanId;

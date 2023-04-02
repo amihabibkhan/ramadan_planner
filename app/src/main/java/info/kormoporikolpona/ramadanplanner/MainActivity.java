@@ -1,4 +1,4 @@
-package info.ruhulamin.ramadanplanner;
+package info.kormoporikolpona.ramadanplanner;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,10 +10,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-import java.util.Random;
-
-import info.ruhulamin.ramadanplanner.CustomDialog.CustomDialog;
-import info.ruhulamin.ramadanplanner.StaticData.StaticData;
 
 public class MainActivity extends AppCompatActivity {
     Dialog  randomDialog;

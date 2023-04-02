@@ -1,4 +1,4 @@
-package info.ruhulamin.ramadanplanner.DB;
+package info.kormoporikolpona.ramadanplanner.DB;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,10 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import java.lang.reflect.Array;
-
-import info.ruhulamin.ramadanplanner.Model.AknojoreModel;
-import info.ruhulamin.ramadanplanner.Model.ReportModel;
+import info.kormoporikolpona.ramadanplanner.Model.AknojoreModel;
+import info.kormoporikolpona.ramadanplanner.Model.ReportModel;
 
 public class DBManager extends SQLiteOpenHelper {
     private static final String DB_NAME = "RamadanPlanner";

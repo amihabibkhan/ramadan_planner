@@ -1,4 +1,4 @@
-package info.ruhulamin.ramadanplanner;
+package info.kormoporikolpona.ramadanplanner;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("info.ruhulamin.ramadanplanner", appContext.getPackageName());
+        assertEquals("info.kormoporikolpona.ramadanplanner", appContext.getPackageName());
     }
 }

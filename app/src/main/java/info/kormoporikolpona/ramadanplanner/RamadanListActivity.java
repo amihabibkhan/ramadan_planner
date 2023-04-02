@@ -1,4 +1,4 @@
-package info.ruhulamin.ramadanplanner;
+package info.kormoporikolpona.ramadanplanner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,14 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-
-import info.ruhulamin.ramadanplanner.Model.RamadanIdAndTitle;
+import info.kormoporikolpona.ramadanplanner.Model.RamadanIdAndTitle;
 
 public class RamadanListActivity extends AppCompatActivity implements View.OnClickListener {
 

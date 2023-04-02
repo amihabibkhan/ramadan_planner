@@ -1,11 +1,41 @@
-package info.ruhulamin.ramadanplanner.Model;
+package info.kormoporikolpona.ramadanplanner.Model;
 
-public class ReportModel {
+public class AknojoreModel {
     public int check_list_1, check_list_2, check_list_3, check_list_4, check_list_5, check_list_6, check_list_7, check_list_8, check_list_9,
-            fazar_f, fazar_s, zohor_f, zohor_s, asor_f, asor_s, magrib_f, magrib_s, isha_f, isha_s, tarabih, tahazzud;
-    public String tilawat_ayah, tilawat_sura, memorize_ayah, memorize_sura, self_criticism, achievement, date;
+            fazar_f, fazar_s, zohor_f, zohor_s, asor_f, asor_s, magrib_f, magrib_s, isha_f, isha_s, tarabih, tahazzud, tilawat_ayah, tilawat_sura, memorize_ayah, memorize_sura;
+    public String self_criticism, achievement;
 
-    public ReportModel() {
+    public AknojoreModel() {
+    }
+
+    public AknojoreModel(int check_list_1, int check_list_2, int check_list_3, int check_list_4, int check_list_5, int check_list_6, int check_list_7, int check_list_8, int check_list_9, int fazar_f, int fazar_s, int zohor_f, int zohor_s, int asor_f, int asor_s, int magrib_f, int magrib_s, int isha_f, int isha_s, int tarabih, int tahazzud, int tilawat_ayah, int tilawat_sura, int memorize_ayah, int memorize_sura, String self_criticism, String achievement) {
+        this.check_list_1 = check_list_1;
+        this.check_list_2 = check_list_2;
+        this.check_list_3 = check_list_3;
+        this.check_list_4 = check_list_4;
+        this.check_list_5 = check_list_5;
+        this.check_list_6 = check_list_6;
+        this.check_list_7 = check_list_7;
+        this.check_list_8 = check_list_8;
+        this.check_list_9 = check_list_9;
+        this.fazar_f = fazar_f;
+        this.fazar_s = fazar_s;
+        this.zohor_f = zohor_f;
+        this.zohor_s = zohor_s;
+        this.asor_f = asor_f;
+        this.asor_s = asor_s;
+        this.magrib_f = magrib_f;
+        this.magrib_s = magrib_s;
+        this.isha_f = isha_f;
+        this.isha_s = isha_s;
+        this.tarabih = tarabih;
+        this.tahazzud = tahazzud;
+        this.tilawat_ayah = tilawat_ayah;
+        this.tilawat_sura = tilawat_sura;
+        this.memorize_ayah = memorize_ayah;
+        this.memorize_sura = memorize_sura;
+        this.self_criticism = self_criticism;
+        this.achievement = achievement;
     }
 
     public int getCheck_list_1() {
@@ -176,35 +206,35 @@ public class ReportModel {
         this.tahazzud = tahazzud;
     }
 
-    public String getTilawat_ayah() {
+    public int getTilawat_ayah() {
         return tilawat_ayah;
     }
 
-    public void setTilawat_ayah(String tilawat_ayah) {
+    public void setTilawat_ayah(int tilawat_ayah) {
         this.tilawat_ayah = tilawat_ayah;
     }
 
-    public String getTilawat_sura() {
+    public int getTilawat_sura() {
         return tilawat_sura;
     }
 
-    public void setTilawat_sura(String tilawat_sura) {
+    public void setTilawat_sura(int tilawat_sura) {
         this.tilawat_sura = tilawat_sura;
     }
 
-    public String getMemorize_ayah() {
+    public int getMemorize_ayah() {
         return memorize_ayah;
     }
 
-    public void setMemorize_ayah(String memorize_ayah) {
+    public void setMemorize_ayah(int memorize_ayah) {
         this.memorize_ayah = memorize_ayah;
     }
 
-    public String getMemorize_sura() {
+    public int getMemorize_sura() {
         return memorize_sura;
     }
 
-    public void setMemorize_sura(String memorize_sura) {
+    public void setMemorize_sura(int memorize_sura) {
         this.memorize_sura = memorize_sura;
     }
 
@@ -222,44 +252,5 @@ public class ReportModel {
 
     public void setAchievement(String achievement) {
         this.achievement = achievement;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public ReportModel(int check_list_1, int check_list_2, int check_list_3, int check_list_4, int check_list_5, int check_list_6, int check_list_7, int check_list_8, int check_list_9, int fazar_f, int fazar_s, int zohor_f, int zohor_s, int asor_f, int asor_s, int magrib_f, int magrib_s, int isha_f, int isha_s, int tarabih, int tahazzud, String tilawat_ayah, String tilawat_sura, String memorize_ayah, String memorize_sura, String self_criticism, String achievement, String date) {
-        this.check_list_1 = check_list_1;
-        this.check_list_2 = check_list_2;
-        this.check_list_3 = check_list_3;
-        this.check_list_4 = check_list_4;
-        this.check_list_5 = check_list_5;
-        this.check_list_6 = check_list_6;
-        this.check_list_7 = check_list_7;
-        this.check_list_8 = check_list_8;
-        this.check_list_9 = check_list_9;
-        this.fazar_f = fazar_f;
-        this.fazar_s = fazar_s;
-        this.zohor_f = zohor_f;
-        this.zohor_s = zohor_s;
-        this.asor_f = asor_f;
-        this.asor_s = asor_s;
-        this.magrib_f = magrib_f;
-        this.magrib_s = magrib_s;
-        this.isha_f = isha_f;
-        this.isha_s = isha_s;
-        this.tarabih = tarabih;
-        this.tahazzud = tahazzud;
-        this.tilawat_ayah = tilawat_ayah;
-        this.tilawat_sura = tilawat_sura;
-        this.memorize_ayah = memorize_ayah;
-        this.memorize_sura = memorize_sura;
-        this.self_criticism = self_criticism;
-        this.achievement = achievement;
-        this.date = date;
     }
 }

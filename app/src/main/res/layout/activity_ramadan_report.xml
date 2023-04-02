@@ -84,6 +84,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:text="টিপস"
+                        android:textColor="@color/black"
                         android:id="@+id/tips_today"
                         style="?android:borderlessButtonStyle"
                         android:layout_marginRight="8dp"
@@ -94,6 +95,7 @@
                         android:layout_weight="1"
                         android:id="@+id/best_task_today"
                         android:text="সেরা কাজ"
+                        android:textColor="@color/black"
                         style="?android:borderlessButtonStyle"
                         android:layout_marginRight="8dp"
                         android:background="@drawable/round_button"
@@ -101,6 +103,7 @@
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:textColor="@color/black"
                         android:id="@+id/ayah_hadith_today"
                         android:text="আয়াত/হাদিস"
                         style="?android:borderlessButtonStyle"
@@ -621,6 +624,7 @@
                         android:gravity="top" 
                         android:id="@+id/self_criticism"
                         android:hint="পর্যালোচনা লিখুন"
+                        android:textColor="@color/black"
                         android:background="@drawable/home_menu"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
@@ -665,6 +669,7 @@
                         android:padding="8dp"
                         android:id="@+id/achievement"
                         android:gravity="top"
+                        android:textColor="@color/black"
                         android:hint="আজকের অর্জন গুলো লিখুন"
                         android:background="@drawable/home_menu"
                         android:layout_height="wrap_content"/>

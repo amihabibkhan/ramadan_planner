@@ -1,15 +1,12 @@
-package info.ruhulamin.ramadanplanner;
+package info.kormoporikolpona.ramadanplanner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
 
-import com.google.gson.Gson;
-
-import info.ruhulamin.ramadanplanner.DB.DBManager;
-import info.ruhulamin.ramadanplanner.Model.AknojoreModel;
+import info.kormoporikolpona.ramadanplanner.DB.DBManager;
+import info.kormoporikolpona.ramadanplanner.Model.AknojoreModel;
 
 public class AtAGlanceActivity extends AppCompatActivity {
 

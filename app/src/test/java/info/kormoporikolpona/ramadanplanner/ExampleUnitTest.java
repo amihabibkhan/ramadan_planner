@@ -1,4 +1,4 @@
-package info.ruhulamin.ramadanplanner;
+package info.kormoporikolpona.ramadanplanner;
 
 import org.junit.Test;
 

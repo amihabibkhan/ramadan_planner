@@ -1,4 +1,4 @@
-package info.ruhulamin.ramadanplanner.StaticData;
+package info.kormoporikolpona.ramadanplanner.StaticData;
 
 
 public class StaticData {

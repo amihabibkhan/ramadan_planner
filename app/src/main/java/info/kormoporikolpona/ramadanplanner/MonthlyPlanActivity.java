@@ -1,4 +1,4 @@
-package info.ruhulamin.ramadanplanner;
+package info.kormoporikolpona.ramadanplanner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import info.ruhulamin.ramadanplanner.DB.DBManager;
+import info.kormoporikolpona.ramadanplanner.DB.DBManager;
 
 public class MonthlyPlanActivity extends AppCompatActivity {
 
